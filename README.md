@@ -8,4 +8,4 @@ Oshin's personal website
 
 ![OSHIB UI designs overview](https://github.com/JaoShiGitHub/OSHIN/blob/main/OSHIN.png?raw=true)
 
-© JaoShiGitHub. All Rights Reserved
+© 2025 JaoShiGitHub. All Rights Reserved
