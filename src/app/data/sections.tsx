@@ -1,0 +1,16 @@
+type NavItem = {
+  section: string;
+  link: string;
+};
+
+const navItems: NavItem[] = [
+  { section: "Home", link: "#home" },
+  { section: "About", link: "#about" },
+  { section: "Self Development", link: "#self-development" },
+  { section: "Projects", link: "#projects" },
+  { section: "Tech Stack", link: "#tech-stack" },
+  { section: "Experience", link: "#experience" },
+  { section: "Contact", link: "#contact" },
+];
+
+export default navItems;
