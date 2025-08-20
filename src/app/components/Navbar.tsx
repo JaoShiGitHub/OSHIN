@@ -11,15 +11,15 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed flex justify-between items-center w-full top-0">
-      <div className="font-babylonica text-3xl">Oshin</div>
+    <nav className="fixed flex justify-between items-center w-full top-0 px-24">
+      <div className="font-babylonica text-[4.45vw]">Oshin</div>
       <div className="flex justify-between w-full">
-        <div className="flex justify-between w-full">
+        <div className="flex justify-evenly w-full mx-8 items-end">
           {navItems.map((item, index) => (
             <a
               key={index}
               href={item.link}
-              className="text-lg font-lato hover:text-gray-500 transition-colors"
+              className="text-[1.4vw] font-lato hover:text-gray-500 transition-colors"
             >
               {item.section}
             </a>
