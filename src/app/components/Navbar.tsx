@@ -1,6 +1,7 @@
 "use client";
 
 import { useNavbar } from "../contexts/NavbarProvider";
+import navItems from "../data/sections";
 
 function Navbar() {
   const { darkMode, setDarkMode } = useNavbar();
@@ -14,13 +15,15 @@ function Navbar() {
       <div className="font-babylonica text-3xl">Oshin</div>
       <div className="flex justify-between w-full">
         <div className="flex justify-between w-full">
-          <a>Home</a>
-          <a>About</a>
-          <a>Self Development</a>
-          <a>Projects</a>
-          <a>Tack Stack</a>
-          <a>Experience</a>
-          <a>Contact</a>
+          {navItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.link}
+              className="text-lg font-lato hover:text-gray-500 transition-colors"
+            >
+              {item.section}
+            </a>
+          ))}
         </div>
 
         <button className="cursor-pointer" onClick={toggleDarkMode}>
