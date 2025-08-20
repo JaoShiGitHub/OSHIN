@@ -31,7 +31,7 @@ function AboutPage() {
         </div>
       </div>
       <div className="w-full h-full bg-[url('/images/oshin/oshin.png')] bg-cover bg-center text-white md:hidden">
-        <div className="h-full flex flex-col items-center justify-center p-4">
+        <div className="h-full flex flex-col items-center justify-center px-4">
           <h1 className="font-philosopher font-bold text-[clamp(3rem,10vw,20rem)] tracking-tighter">
             OSHIN
           </h1>
