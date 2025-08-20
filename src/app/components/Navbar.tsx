@@ -44,7 +44,7 @@ function Navbar() {
       {/* Navbar for screens 0px - 767px */}
       <div
         className={`md:hidden flex justify-between items-center w-full top-0 max-w-[90vw] min-[320px] ${
-          darkMode ? "pt-4" : "pt-6"
+          darkMode ? "pt-6" : "pt-6"
         }`}
       >
         <div className="flex justify-center items-center gap-x-8">
