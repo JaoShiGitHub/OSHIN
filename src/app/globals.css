@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+
 .font-babylonica {
   font-family: "Babylonica", cursive;
+}
+
+.font-philosopher {
+  font-family: "Philosopher", sans-serif;
 }

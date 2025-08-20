@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex justify-between items-center">
+    <nav className="fixed flex justify-between items-center w-full top-0">
       <div className="font-babylonica text-3xl">Oshin</div>
       <div className="flex justify-between w-full">
         <div className="flex justify-between w-full">
