@@ -17,7 +17,7 @@ function Footer() {
           className="border-black border max-w-[671px] w-full rounded-[10px] min-h-[83px] flex items-center justify-center text-center"
         >
           <b>
-            Download <br /> Oshin's resume
+            Download <br /> Oshin&apos;s resume
           </b>
         </a>
         <h1 className="text-4xl">
