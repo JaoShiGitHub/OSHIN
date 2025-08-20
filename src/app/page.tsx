@@ -4,6 +4,7 @@ import { useNavbar } from "./contexts/NavbarProvider";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import Footer from "./components/Footer";
 
 function Home() {
   const { darkMode } = useNavbar();
@@ -13,6 +14,7 @@ function Home() {
       <Navbar />
       <HomePage />
       <AboutPage />
+      <Footer />
     </div>
   );
 }
