@@ -1,7 +1,17 @@
+"use client";
+
+import { useNavbar } from "../contexts/NavbarProvider";
+
 function AboutPage() {
+  const { darkMode } = useNavbar();
+
   return (
     <section id="about" className="h-screen text-center ">
-      <div className="h-screen  bg-[#F2F2F2]  hidden md:flex md:flex-row">
+      <div
+        className={`h-screen hidden md:flex md:flex-row ${
+          darkMode ? "bg-[#091023]" : "bg-[#F2F2F2]"
+        }`}
+      >
         <img
           className="w-full md:w-1/2 h-full object-cover object-center"
           alt="Oshin's image"
