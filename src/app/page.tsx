@@ -1,3 +1,12 @@
-export default function Home() {
-  return <div>Hi</div>;
+import Navbar from "./components/Navbar";
+import { NavbarProvider } from "./contexts/NavbarProvider";
+
+function Home() {
+  return (
+    <NavbarProvider>
+      <Navbar />
+    </NavbarProvider>
+  );
 }
+
+export default Home;
