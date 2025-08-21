@@ -11,7 +11,8 @@ function Footer() {
         darkMode ? "bg-[#091023]" : "bg-white"
       }`}
     >
-      <div className="flex flex-col items-center  gap-y-4 px-4 h-full w-full max-w-[671px]">
+      <div className="flex flex-col items-center justify-between px-4 pb-10 h-full w-full max-w-[671px]">
+        {/* DOWNLOAD RESUME */}
         <a
           href="/files/oshin_ganjanapas_resume.pdf"
           download
@@ -28,6 +29,47 @@ function Footer() {
         <h1 className="text-[clamp(40px,3vw,45px)]">
           Want me to join your team? Feel free to contact!
         </h1>
+        {/* CONTACTS */}
+        <ul className="text-[clamp(20px,5vw,35px)] w-full flex flex-col gap-y-4">
+          <li className="flex gap-x-10 items-center">
+            <img
+              className="h-[clamp(32px,5vw,52px)]"
+              alt="GitHub logo"
+              src={
+                darkMode
+                  ? "/images/icons/contacts/github_logo2.png"
+                  : "/images/icons/contacts/github_logo.png"
+              }
+            />
+            <a className="" href="https://github.com/JaoShiGitHub">
+              JaoshiGitHub
+            </a>
+          </li>
+          <li className="flex gap-x-10 items-center">
+            <img
+              className="h-[clamp(32px,5vw,52px)]"
+              alt="Phone icon"
+              src={
+                darkMode
+                  ? "/images/icons/contacts/phone_icon2.png"
+                  : "/images/icons/contacts/phone_icon.png"
+              }
+            />
+            <p>098-487-6577</p>
+          </li>
+          <li className="flex gap-x-10 items-center">
+            <img
+              className="h-[clamp(32px,5vw,52px)]"
+              alt="Envelope icon"
+              src={
+                darkMode
+                  ? "/images/icons/contacts/envelope_icon2.png"
+                  : "/images/icons/contacts/envelope_icon.png"
+              }
+            />
+            <p>oshin.ganjanapas@gmail.com</p>
+          </li>
+        </ul>
       </div>
       <p
         className={`text-center w-full ${
