@@ -4,6 +4,7 @@ import { useNavbar } from "./contexts/NavbarProvider";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import ExperiencePage from "./pages/ExperiencePage";
 import Footer from "./components/Footer";
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
       <Navbar />
       <HomePage />
       <AboutPage />
+      <ExperiencePage />
       <Footer />
     </div>
   );
