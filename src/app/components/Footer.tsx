@@ -7,17 +7,17 @@ function Footer() {
   return (
     <section
       id="contact"
-      className={`h-screen md:max-h-[457px] pt-32 md:pt-0 flex flex-col items-center ${
+      className={`max-h-[680px] h-full md:max-h-[457px] flex flex-col items-center ${
         darkMode ? "bg-[#091023]" : "bg-white"
       }`}
     >
-      <div className="flex justify-evenly items-center w-full h-full px-10">
-        <div className="hidden md:max-w-[671px] w-full md:flex flex-col gap-y-10">
-          <h1 className="text-[clamp(50px,3vw,55px)]">
+      <div className="flex justify-evenly items-center w-full h-full md:py-12 md:max-w-[90vw]">
+        <div className="hidden w-1/2 md:flex flex-col gap-y-10">
+          <h1 className="text-[clamp(44px,3vw,55px)]">
             Want me to join your team? Feel free to contact!
           </h1>
           <img
-            className="w-[5vw]"
+            className="w-[5vw] mx-auto"
             alt="Arrow icon"
             src={
               darkMode
@@ -27,7 +27,7 @@ function Footer() {
           />
         </div>
 
-        <div className="flex flex-col items-center justify-between md:justify-center px-4 pb-10 md:px-0 md:pb-0 h-full w-full md:max-w-[671px] md:gap-y-10">
+        <div className="flex flex-col items-center justify-between md:justify-center px-4 pb-10  md:pl-10 md:pb-0 h-full w-full md:w-1/2 md:gap-y-10">
           {/* DOWNLOAD RESUME */}
           <a
             href="/files/oshin_ganjanapas_resume.pdf"
@@ -36,20 +36,20 @@ function Footer() {
               darkMode
                 ? "border-white hover:border-[#FFD980] text-white hover:text-[#FFD980]"
                 : "border-black hover:border-blue-600 text-black hover:text-blue-600"
-            } border w-full rounded-[10px] min-h-[83px] flex items-center justify-center text-center`}
+            } border w-full rounded-[10px] min-h-[83px] flex items-center justify-center text-center mt-18 md:mt-0`}
           >
-            <b className="text-[clamp(22px,3vw,25px)]">
-              Download <br /> Oshin&apos;s resume
+            <b className="text-[clamp(22px,2vw,25px)]">
+              Download <br className="md:hidden" /> Oshin&apos;s resume
             </b>
           </a>
-          <h1 className="block md:hidden text-[clamp(40px,3vw,45px)]">
+          <h1 className="block md:hidden text-[clamp(40px,3vw,45px)] my-10">
             Want me to join your team? Feel free to contact!
           </h1>
           {/* CONTACTS */}
-          <ul className="text-[clamp(20px,5vw,35px)] md:text-[clamp(20px,5vw,24px)] w-full flex flex-col gap-y-4">
+          <ul className="text-[clamp(20px,5vw,24px)] md:text-[clamp(20px,2vw,24px)] w-full flex flex-col gap-y-4">
             <li className="flex gap-x-5 items-center">
               <img
-                className="h-[clamp(32px,5vw,52px)]"
+                className="h-[clamp(32px,4vw,42px)]"
                 alt="GitHub logo"
                 src={
                   darkMode
@@ -57,13 +57,18 @@ function Footer() {
                     : "/images/icons/contacts/github_logo.png"
                 }
               />
-              <a className="" href="https://github.com/JaoShiGitHub">
+              <a
+                className={`hover:underline hover:font-bold ${
+                  darkMode ? "hover:text-[#FFD980]" : "hover:text-blue-600"
+                }`}
+                href="https://github.com/JaoShiGitHub"
+              >
                 JaoshiGitHub
               </a>
             </li>
             <li className="flex gap-x-5 items-center">
               <img
-                className="h-[clamp(32px,5vw,52px)]"
+                className="h-[clamp(32px,4vw,42px)]"
                 alt="Phone icon"
                 src={
                   darkMode
@@ -75,7 +80,7 @@ function Footer() {
             </li>
             <li className="flex gap-x-5 items-center">
               <img
-                className="h-[clamp(32px,5vw,52px)]"
+                className="h-[clamp(28px,3.5vw,42px)]"
                 alt="Envelope icon"
                 src={
                   darkMode
