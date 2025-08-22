@@ -9,10 +9,10 @@ function TechStackPage() {
       id="tech-stack"
       className={`h-screen ${
         darkMode ? "bg-[#070d1d]" : "bg-white"
-      } font-philosopher flex flex-col items-center justify-center text-center`}
+      } font-philosopher flex flex-col items-center justify-center text-center gap-y-32`}
     >
       <h1 className="text-[40px] font-bold">Tech Stack</h1>
-      <div className="flex">
+      <div className="flex gap-8 max-w-[1100px] flex-wrap">
         {oshinTechStack.map((item, index) => (
           <SmallCard
             key={index}
@@ -26,6 +26,9 @@ function TechStackPage() {
           />
         ))}
       </div>
+      <p>
+        Main tech stack: JavaScript, TypeScript, Next.JS, PostgreSQL, Node.js
+      </p>
     </div>
   );
 }
