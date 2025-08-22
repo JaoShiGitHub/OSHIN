@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed flex justify-center items-center w-full top-0">
+    <nav className="fixed flex justify-center items-center w-full top-0 z-20">
       {/* Navbar for the screen that wider than 767px */}
       <div className="hidden md:flex justify-between items-center w-full top-0 max-w-[90vw]">
         <div className="font-babylonica text-[4.45vw]">Oshin</div>
