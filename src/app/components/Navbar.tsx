@@ -21,7 +21,7 @@ function Navbar() {
               <a
                 key={index}
                 href={item.link}
-                className="text-[1.4vw] font-lato hover:text-gray-500 transition-colors"
+                className="text-[1.4vw] font-lato hover:text-blue-600 cursor-pointer transition-colors"
               >
                 {item.section}
               </a>
