@@ -14,13 +14,11 @@ function SmallCard(props: SmallCardProps) {
     <div
       className={`${
         darkMode ? "bg-[#293555]" : "bg-gray-200"
-      } font-lato rounded-lg py-2 w-[clamp(70px,10vw,130px)] h-[clamp(30px,12vh,90px)] max-w-[132px] flex flex-col items-center justify-between gap-2 shadow-lg transition-all duration-300 hover:scale-105`}
+      } font-lato rounded-lg pt-2 pb-3 w-[clamp(60px,20vw,90px)] sm:w-[clamp(60px,20vw,120px)] md:w-[clamp(90px,20vw,132px)] lg:w-[clamp(120px,20vw,130px)] xl:w-[clamp(130px,20vw,164px)]  h-[clamp(88px,20vw,110px)] md:h-[clamp(120px,10vw,170px)] lg:h-[clamp(158px,10vw,170px)] xl:h-[clamp(140px,10vw,170px)] flex flex-col items-center justify-between gap-2 shadow-lg transition-all duration-300 hover:scale-105`}
     >
-      <img
-        alt={alt}
-        src={src}
-        className="max-h-20 p-[6px] h-auto w-[clamp(30px,10vw,130px)]"
-      />
+      <div className="w-full flex items-center justify-center h-full">
+        <img alt={alt} src={src} className="w-[40%] sm:w-[30%]" />
+      </div>
       <span className="text-[clamp(9px,2vw,16px)]">{name}</span>
     </div>
   );
