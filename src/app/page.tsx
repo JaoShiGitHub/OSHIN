@@ -7,19 +7,21 @@ import AboutPage from "./pages/AboutPage";
 import TechStackPage from "./pages/TechStackPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import Footer from "./components/Footer";
+import ProjectPage from "./pages/ProjectPage";
 
 function Home() {
   const { darkMode } = useNavbar();
 
   return (
-    <div className={darkMode ? "text-white" : "text-black"}>
+    <main className={darkMode ? "text-white" : "text-black"}>
       <Navbar />
       <HomePage />
       <AboutPage />
+      <ProjectPage />
       <TechStackPage />
       <ExperiencePage />
       <Footer />
-    </div>
+    </main>
   );
 }
 
