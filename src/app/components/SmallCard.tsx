@@ -8,8 +8,8 @@ interface SmallCardProps {
 
 function SmallCard(props: SmallCardProps) {
   const { darkMode } = useNavbar();
-
   const { name, alt, src } = props;
+
   return (
     <div
       className={`${
