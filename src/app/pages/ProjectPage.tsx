@@ -5,6 +5,7 @@ import { useNavbar } from "../contexts/NavbarProvider";
 import ProjectCard from "../components/ProjectCard";
 import projects from "../data/projects";
 import { Project } from "../data/projects";
+import FadeInWrapper from "../components/FadeInWrapper";
 
 function ProjectPage() {
   const { darkMode } = useNavbar();
@@ -24,13 +25,13 @@ function ProjectPage() {
   return (
     <section
       id="projects"
-      className={`h-screen flex flex-col justify-between pt-34 pb-20 items-center font-philosopher gap-y-20 ${
+      className={`h-screen flex flex-col justify-center  pb-20 items-center font-philosopher ${
         darkMode ? "bg-[#091023]" : "bg-white"
       }`}
     >
       <h1 className="text-[clamp(12px,10vw,40px)] font-bold">Projects</h1>
-      <section className="flex justify-evenly items-center w-full h-[60vh]">
-        <button onClick={handleLeftClick} className="cursor-pointer h-full">
+      <section className="flex justify-between max-w-[86vw] items-center w-full h-[60vh]">
+        <button onClick={handleLeftClick} className="cursor-pointer h-fit">
           <img
             src={
               darkMode
@@ -39,15 +40,17 @@ function ProjectPage() {
             }
           />
         </button>
-        <ProjectCard
-          title={project.title}
-          description={project.description}
-          images={project.images}
-          githubUrl={project.githubUrl}
-          techStack={project.techStack}
-          type={project.type}
-        />
-        <button onClick={handleRightClick} className="cursor-pointer h-full">
+        <FadeInWrapper>
+          <ProjectCard
+            title={project.title}
+            description={project.description}
+            images={project.images}
+            githubUrl={project.githubUrl}
+            techStack={project.techStack}
+            type={project.type}
+          />
+        </FadeInWrapper>
+        <button onClick={handleRightClick} className="cursor-pointer h-fit">
           <img
             src={
               darkMode

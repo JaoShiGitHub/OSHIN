@@ -4,10 +4,12 @@ import { useNavbar } from "../contexts/NavbarProvider";
 function ProjectCard(props: Project) {
   const { title, description, images, githubUrl, techStack, type } = props;
   const { darkMode } = useNavbar();
-  const imgCommonCSS = "w-full max-w-[340px] h-auto rounded-lg shadow-lg";
+  const imgCommonCSS = `w-full ${
+    images.length === 1 ? "max-w-[440px]" : "max-w-[340px]"
+  } h-auto rounded-lg shadow-lg`;
 
   return (
-    <section className="flex items-center max-w-[1000px] h-[66vh]">
+    <section className="flex items-center max-w-[62vw] h-[66vh] mt-28">
       <div className={`w-1/2 flex-col flex ${images.length > 1 && "relative"}`}>
         <img
           className={`${imgCommonCSS} ${
@@ -51,7 +53,7 @@ function ProjectCard(props: Project) {
             className={`hover:underline hover:font-bold cursor-pointer text-[18px] ${
               darkMode ? "hover:text-[#FFD980]" : "hover:text-blue-600"
             }`}
-            href="https://github.com/JaoShiGitHub"
+            href={githubUrl}
             target="_blank"
           >
             See on GitHub!

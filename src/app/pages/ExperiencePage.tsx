@@ -7,10 +7,10 @@ function ExperiencePage() {
     <section
       id="experience"
       className={`${
-        darkMode ? "bg-[#091023]" : ""
+        darkMode ? "bg-[#070d1d]" : ""
       } h-screen text-center flex flex-col items-center justify-center font-philosopher`}
     >
-      <h1 className="text-[36px] font-bold">Experience Page</h1>
+      <h1 className="text-[36px] font-bold">Self Development</h1>
       <div className="w-full overflow-hidden mb-20 mt-14">
         <div className="marquee">
           {experience_images.map((image, index) => (

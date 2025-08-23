@@ -17,9 +17,10 @@ function Home() {
       <Navbar />
       <HomePage />
       <AboutPage />
+      <ExperiencePage />
       <ProjectPage />
       <TechStackPage />
-      <ExperiencePage />
+
       <Footer />
     </main>
   );
