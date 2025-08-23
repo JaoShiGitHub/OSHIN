@@ -1,19 +1,19 @@
 import { useNavbar } from "../contexts/NavbarProvider";
-import experience from "../data/experience";
+import selfDevelopment from "../data/self-development";
 
-function ExperiencePage() {
+function SelfDevPage() {
   const { darkMode } = useNavbar();
   return (
     <section
-      id="experience"
+      id="self-development"
       className={`${
         darkMode ? "bg-[#070d1d]" : ""
       } h-screen text-center flex flex-col items-center justify-center font-philosopher`}
     >
-      <h1 className="text-[36px] font-bold">Experience</h1>
+      <h1 className="text-[36px] font-bold">Self Development</h1>
       <div className="w-full overflow-hidden mb-20 mt-14">
         <div className="marquee">
-          {experience.map((image, index) => (
+          {selfDevelopment.map((image, index) => (
             <img
               key={index}
               src={image.src}
@@ -33,4 +33,4 @@ function ExperiencePage() {
     </section>
   );
 }
-export default ExperiencePage;
+export default SelfDevPage;

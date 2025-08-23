@@ -4,10 +4,11 @@ import { useNavbar } from "./contexts/NavbarProvider";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import SelfDevPage from "./pages/SelfDevPage";
+import ProjectPage from "./pages/ProjectPage";
 import TechStackPage from "./pages/TechStackPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import Footer from "./components/Footer";
-import ProjectPage from "./pages/ProjectPage";
 
 function Home() {
   const { darkMode } = useNavbar();
@@ -17,10 +18,10 @@ function Home() {
       <Navbar />
       <HomePage />
       <AboutPage />
-      <ExperiencePage />
+      <SelfDevPage />
       <ProjectPage />
       <TechStackPage />
-
+      <ExperiencePage />
       <Footer />
     </main>
   );

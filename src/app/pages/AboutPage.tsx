@@ -1,5 +1,6 @@
 "use client";
 
+import FadeInWrapper from "../components/FadeInWrapper";
 import { useNavbar } from "../contexts/NavbarProvider";
 import oshinContents from "../data/contents";
 
@@ -18,11 +19,14 @@ function AboutPage() {
           alt="Oshin's image"
           src="/images/oshin/oshin.png"
         />
+
         <div className="w-full md:w-1/2 h-auto flex flex-col items-center justify-center gap-y-12 p-4">
-          <h1 className="font-philosopher font-bold text-[3vw]">OSHIN</h1>
-          <p className="text-[clamp(1rem,1.5vw,1.25rem)] max-w-[426px] px-5">
-            {description}
-          </p>
+          <FadeInWrapper>
+            <h1 className="font-philosopher font-bold text-[3vw]">OSHIN</h1>
+            <p className="text-[clamp(1rem,1.5vw,1.25rem)] max-w-[426px] px-5">
+              {description}
+            </p>
+          </FadeInWrapper>
         </div>
       </div>
       <div className="w-full h-full bg-[url('/images/oshin/oshin.png')] bg-cover bg-center text-white md:hidden">
