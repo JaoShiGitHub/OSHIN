@@ -7,7 +7,7 @@ function ExperiencePage() {
     <section
       id="experience"
       className={`${
-        darkMode ? "bg-[#070d1d]" : ""
+        darkMode ? "bg-[#091023]" : ""
       } h-screen text-center flex flex-col items-center justify-center font-philosopher`}
     >
       <h1 className="text-[36px] font-bold">Experience</h1>
