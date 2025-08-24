@@ -12,14 +12,24 @@ function SelfDevPage() {
       } h-screen text-center flex flex-col items-center justify-center font-philosopher`}
     >
       <h1 className={pageTitle}>Self Development</h1>
-      <div className="w-full overflow-hidden mb-20 mt-14">
-        <div className="marquee">
+      <div className="w-auto overflow-x-clip max-h-[30%] flex my-10 lg:my-0 lg:mb-20 lg:mt-14">
+        <div className="marquee whitespace-nowrap">
           {selfDevelopment.map((image, index) => (
             <img
               key={index}
               src={image.src}
               alt={image.alt}
-              className="max-h-[160px] mx-4"
+              className=" mx-3 lg:mx-4"
+            />
+          ))}
+        </div>
+        <div className="marquee2 whitespace-nowrap">
+          {selfDevelopment.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              className=" mx-3 lg:mx-10"
             />
           ))}
         </div>

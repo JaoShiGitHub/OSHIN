@@ -9,8 +9,6 @@ const experience: experienceImage[] = [
     {src: "/images/experience/oshin-first-elixir-project.png", alt: "Oshin at language meetup"},
     {src: "/images/experience/oshin-genserver.png", alt: "Oshin at DevMorning (Songkran 2025) "},
     {src: "/images/experience/oshin-lisa-birthday.png", alt: "Oshin at 'I wanna be Thai meetup'"},
- 
-
 ];
 
 export default experience;
