@@ -26,13 +26,16 @@ function ProjectPage() {
   return (
     <section
       id="projects"
-      className={`h-screen flex flex-col justify-center  md:pb-24 items-center font-philosopher ${
+      className={`h-screen flex flex-col justify-center items-center font-philosopher ${
         darkMode ? "bg-[#091023]" : "bg-white"
       }`}
     >
-      <h1 className={pageTitle + ` hidden md:inline mt-36`}>PROJECTS</h1>
+      <h1 className={pageTitle + ` hidden md:inline mb-10`}>PROJECTS</h1>
       <section className="flex justify-between max-w-[90vw] items-center w-full">
-        <button onClick={handleLeftClick} className="cursor-pointer h-fit">
+        <button
+          onClick={handleLeftClick}
+          className="cursor-pointer h-fit md:mb-20"
+        >
           <img
             className="h-6 md:h-full"
             src={
@@ -52,7 +55,10 @@ function ProjectPage() {
             type={project.type}
           />
         </FadeInWrapper>
-        <button onClick={handleRightClick} className="cursor-pointer h-fit">
+        <button
+          onClick={handleRightClick}
+          className="cursor-pointer h-fit md:mb-20"
+        >
           <img
             className=" h-6 md:h-full"
             src={
