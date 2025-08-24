@@ -10,7 +10,7 @@ function ProjectCard(props: Project) {
   } h-auto rounded-lg shadow-lg`;
 
   return (
-    <section className="flex flex-col md:flex-row items-center w-full max-w-[75vw] lg:max-w-[70vw]  md:max-h-[60vh] lg:max-h-[80vh] xl:mt-0  md:pb-0 md:mt-20 lg:mt-0 ">
+    <section className="flex flex-col md:flex-row items-center w-full max-w-[75vw] lg:max-w-[70vw]  md:max-h-[60vh] lg:max-h-[80vh] xl:mt-0  md:pb-0  lg:mt-0 ">
       <h1 className={pageTitle + ` md:hidden mb-10`}>PROJECTS</h1>
       <div className="md:hidden w-full flex flex-col items-center">
         <span>-{type.toUpperCase()}- </span>
@@ -27,33 +27,33 @@ function ProjectCard(props: Project) {
       >
         <img
           className={`${imgCommonCSS} ${
-            images.length > 1 && "absolute left-0 z-30"
+            images.length > 1 && "absolute left-0 top-0 z-30"
           }`}
           src={images[0]}
           alt={title}
         />
         {images[1] && (
           <img
-            className={`${imgCommonCSS}  absolute top-[-16vh] left-[30%]  z-20`}
+            className={`${imgCommonCSS}  absolute bottom-[-10px] left-[30%]  z-20`}
             src={images[1]}
             alt={title}
           />
         )}
         {images[2] && (
           <img
-            className={`${imgCommonCSS} absolute top-[-26vh] left-[10%]`}
+            className={`${imgCommonCSS} absolute bottom-24 left-[10%]`}
             src={images[2]}
             alt={title}
           />
         )}
       </div>
-      <div className="md:w-1/2 text-center">
+      <div className="md:w-1/2 text-center md:pl-10">
         <h1 className="text-[clamp(20px,4vw,36px)] font-bold">{title}</h1>
-        <span className="hidden">-{type}- </span>
-        <p className="hidden lg:block text-center text-[clamp(1rem,1.5vw,1.25rem)] md:mt-10 md:pl-10 xl:px-10">
+        <span className="hidden md:inline">-{type.toUpperCase()}- </span>
+        <p className="hidden lg:block text-center text-[clamp(1rem,1.5vw,1.25rem)] md:mt-10  xl:px-10">
           {description}
         </p>
-        <p className="lg:hidden text-center text-[clamp(1rem,1.5vw,1.25rem)] md:mt-10 md:mb-16 md:pl-10">
+        <p className="lg:hidden text-center text-[clamp(1rem,1.5vw,1.25rem)] md:mt-10 md:mb-16">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

@@ -26,11 +26,11 @@ function ProjectPage() {
   return (
     <section
       id="projects"
-      className={`h-screen flex flex-col justify-center items-center font-philosopher ${
+      className={`h-screen flex flex-col justify-center items-center gap-y-10 xl:gap-y-20 font-philosopher ${
         darkMode ? "bg-[#091023]" : "bg-white"
       }`}
     >
-      <h1 className={pageTitle + ` hidden md:inline mb-10`}>PROJECTS</h1>
+      <h1 className={pageTitle + ` hidden md:inline mb:10`}>PROJECTS</h1>
       <section className="flex justify-between max-w-[90vw] items-center w-full">
         <button
           onClick={handleLeftClick}
