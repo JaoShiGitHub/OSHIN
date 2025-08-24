@@ -54,10 +54,10 @@ function ProjectCard(props: Project) {
           {description}
         </p>
         <p className="md:hidden text-center text-[clamp(1rem,1.5vw,1.25rem)] md:mt-10 md:mb-16 md:px-10">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat."
+          aliquip ex ea commodo consequat.
         </p>
         <p className="text-[clamp(1rem,1.5vw,1.13rem)] mt-10 mb-6 md:mt-0 md:mb-10">
           Tech Stack: {techStack}
