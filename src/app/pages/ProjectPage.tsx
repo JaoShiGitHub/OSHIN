@@ -5,6 +5,7 @@ import { useNavbar } from "../contexts/NavbarProvider";
 import ProjectCard from "../components/ProjectCard";
 import projects from "../data/projects";
 import { Project } from "../data/projects";
+import { pageTitle } from "../styles/text";
 import FadeInWrapper from "../components/FadeInWrapper";
 
 function ProjectPage() {
@@ -25,14 +26,15 @@ function ProjectPage() {
   return (
     <section
       id="projects"
-      className={`h-screen flex flex-col justify-center  pb-20 items-center font-philosopher ${
+      className={`h-screen flex flex-col justify-center  md:pb-24 items-center font-philosopher ${
         darkMode ? "bg-[#091023]" : "bg-white"
       }`}
     >
-      <h1 className="text-[clamp(12px,10vw,40px)] font-bold">Projects</h1>
-      <section className="flex justify-between max-w-[86vw] items-center w-full h-[60vh]">
+      <h1 className={pageTitle + ` hidden md:inline mt-36`}>PROJECTS</h1>
+      <section className="flex justify-between max-w-[90vw] items-center w-full">
         <button onClick={handleLeftClick} className="cursor-pointer h-fit">
           <img
+            className="h-6 md:h-full"
             src={
               darkMode
                 ? "/images/icons/arrows/white-arrow-left.svg"
@@ -52,6 +54,7 @@ function ProjectPage() {
         </FadeInWrapper>
         <button onClick={handleRightClick} className="cursor-pointer h-fit">
           <img
+            className=" h-6 md:h-full"
             src={
               darkMode
                 ? "/images/icons/arrows/white-arrow-right.svg"

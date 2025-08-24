@@ -21,7 +21,9 @@ function Navbar() {
               <a
                 key={index}
                 href={item.link}
-                className="text-[1.4vw] font-lato hover:text-blue-600 cursor-pointer transition-colors"
+                className={`text-[1.4vw] font-lato cursor-pointer transition-colors ${
+                  darkMode ? "hover:text-[#FFD980]" : "hover:text-blue-600"
+                }`}
               >
                 {item.section}
               </a>

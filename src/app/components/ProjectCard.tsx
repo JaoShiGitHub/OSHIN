@@ -1,5 +1,6 @@
 import { Project } from "../data/projects";
 import { useNavbar } from "../contexts/NavbarProvider";
+import { pageTitle } from "../styles/text";
 
 function ProjectCard(props: Project) {
   const { title, description, images, githubUrl, techStack, type } = props;
@@ -9,8 +10,21 @@ function ProjectCard(props: Project) {
   } h-auto rounded-lg shadow-lg`;
 
   return (
-    <section className="flex items-center max-w-[62vw] h-[66vh] mt-28">
-      <div className={`w-1/2 flex-col flex ${images.length > 1 && "relative"}`}>
+    <section className="flex flex-col md:flex-row items-center w-full max-w-[70vw] h-full lg:h-[66vh] md:mt-28 pb-16 md:pb-0">
+      <h1 className={pageTitle + ` md:hidden mt-20`}>PROJECTS</h1>
+      <div className="md:hidden w-full flex flex-col items-center">
+        <span>-{type.toUpperCase()}- </span>
+        <img
+          className={`${imgCommonCSS} mt-10 mb-10`}
+          src={images[0]}
+          alt={title}
+        />
+      </div>
+      <div
+        className={`hidden md:w-1/2 flex-col md:flex ${
+          images.length > 1 && "relative"
+        }`}
+      >
         <img
           className={`${imgCommonCSS} ${
             images.length > 1 && "absolute right-64 z-30"
@@ -33,13 +47,21 @@ function ProjectCard(props: Project) {
           />
         )}
       </div>
-      <div className="w-1/2 text-center">
-        <h1 className="text-[36px] font-bold">{title}</h1>
-        <span>-{type}- </span>
-        <p className="text-center text-[22px] mt-10 mb-16 px-10">
+      <div className="md:w-1/2 text-center">
+        <h1 className="text-[clamp(20px,4vw,36px)] font-bold">{title}</h1>
+        <span className="hidden">-{type}- </span>
+        <p className="hidden md:block text-center text-[clamp(1rem,1.5vw,1.25rem)] md:mt-10 md:mb-16 md:px-10">
           {description}
         </p>
-        <p className=" text-[18px] mb-10">Tech Stack: {techStack}</p>
+        <p className="md:hidden text-center text-[clamp(1rem,1.5vw,1.25rem)] md:mt-10 md:mb-16 md:px-10">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat."
+        </p>
+        <p className="text-[clamp(1rem,1.5vw,1.13rem)] mt-10 mb-6 md:mt-0 md:mb-10">
+          Tech Stack: {techStack}
+        </p>
         <div className="w-full">
           <img
             src={
@@ -56,7 +78,7 @@ function ProjectCard(props: Project) {
             href={githubUrl}
             target="_blank"
           >
-            See on GitHub!
+            See more on GitHub!
           </a>
         </div>
       </div>
