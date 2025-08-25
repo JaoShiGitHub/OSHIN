@@ -3,10 +3,12 @@
 import FadeInWrapper from "../components/FadeInWrapper";
 import { useNavbar } from "../contexts/NavbarProvider";
 import oshinContents from "../data/contents";
+import { ReactElement } from "react";
 
 function AboutPage() {
   const { darkMode } = useNavbar();
   const { title, description } = oshinContents[1];
+
   return (
     <section id="about" className="h-screen text-center ">
       <div
@@ -22,22 +24,29 @@ function AboutPage() {
 
         <div className="w-full md:w-1/2 h-auto flex flex-col items-center justify-center gap-y-12 p-4">
           <FadeInWrapper>
-            <h1 className="font-philosopher font-bold text-[3vw]">OSHIN</h1>
-            <p className="text-[clamp(1rem,1.5vw,1.25rem)] max-w-[426px] px-5">
-              {description}
-            </p>
+            <h1 className="font-philosopher font-bold text-[3vw] mb-4">
+              OSHIN
+            </h1>
+            <div className="text-[clamp(1rem,1.5vw,1.25rem)] font-extralight max-w-[426px] px-5 space-y-4">
+              {description.split("\n\n").map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
           </FadeInWrapper>
         </div>
       </div>
       <div className="w-full h-full bg-[url('/images/oshin/oshin.png')] bg-cover bg-center text-white md:hidden">
         <div className="h-full flex flex-col items-center justify-center px-4">
           <FadeInWrapper>
-            <h1 className="font-philosopher font-bold text-[clamp(3rem,10vw,20rem)] tracking-tighter">
+            <h1 className="font-philosopher font-bold text-[clamp(3rem,10vw,20rem)] tracking-tighter mb-4">
               {title.toUpperCase()}
             </h1>
-            <p className="text-[clamp(1rem,1.5vw,1.25rem)] max-w-[360px] px-5">
-              {description}
-            </p>
+
+            <div className="text-[clamp(1rem,1.5vw,1.25rem)] font-extralight max-w-[360px] px-5 space-y-4">
+              {description.split("\n\n").map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
           </FadeInWrapper>
         </div>
       </div>

@@ -23,7 +23,7 @@ function ExperiencePage() {
             />
           ))}
         </div>
-        <div className="marquee2 whitespace-nowrap">
+        <div className="marquee2 whitespace-nowrap" aria-hidden="true">
           {experience.map((image, index) => (
             <img
               key={index}
