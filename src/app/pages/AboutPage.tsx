@@ -27,7 +27,7 @@ function AboutPage() {
             <h1 className="font-philosopher font-bold text-[3vw] mb-4">
               OSHIN
             </h1>
-            <div className="text-[clamp(1rem,1.5vw,1.25rem)] font-extralight max-w-[426px] px-5 space-y-4">
+            <div className="text-[clamp(1rem,1.5vw,1.25rem)] max-w-[426px] px-5 space-y-4">
               {description.split("\n\n").map((para, i) => (
                 <p key={i}>{para}</p>
               ))}
