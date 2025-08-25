@@ -39,7 +39,7 @@ function SelfDevPage() {
         which helps her grow as a web developer and improve her English skills.
         Instead of waiting for opportunities, she creates them for herself and
         for others who share her interests, enhancing both her soft and
-        technical skills—such as organising events for the <b>DevMorning</b>
+        technical skills—such as organising events for the <b>DevMorning </b>
         community in 2024 and 2025, and hosting a developer meetup at True
         Digital Park in 2025.
       </p>
