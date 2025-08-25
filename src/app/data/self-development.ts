@@ -3,11 +3,12 @@ interface SelfDevelopmentImage {
     alt: string;
 }
 const selfDevelopment: SelfDevelopmentImage[] = [
+    {src: "/images/self-development/oshin_eng_korean.png", alt: "Oshin at 'I wanna be Thai meetup'"},
+    {src: "/images/self-development/oshin_at_dm3.png", alt: "Oshin at DevMorning 2024"},
     {src: "/images/self-development/oshin_at_dm2.png", alt: "Oshin at DevMorning 2025"},
-    {src: "/images/self-development/oshin_at_pasa1.png", alt: "Oshin at Pasa meetup"},
+    // {src: "/images/self-development/oshin_at_pasa1.png", alt: "Oshin at Pasa meetup"},
     {src: "/images/self-development/oshin_landuage_meetup.png", alt: "Oshin at language meetup"},
     {src: "/images/self-development/oshin_at_dm1.png", alt: "Oshin at DevMorning (Songkran 2025) "},
-    {src: "/images/self-development/oshin_eng_korean.png", alt: "Oshin at 'I wanna be Thai meetup'"},
     {src: "/images/self-development/oshin_and_dev_friends.png", alt: "Oshin and Dev Friends"},
     {src: "/images/self-development/oshin_at_pasa2.png", alt: "Oshin at Pasa meetup"},
 
