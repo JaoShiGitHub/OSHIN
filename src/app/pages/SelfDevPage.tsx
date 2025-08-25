@@ -9,7 +9,7 @@ function SelfDevPage() {
       id="self-development"
       className={`${
         darkMode ? "bg-[#070d1d]" : ""
-      } h-screen text-center flex flex-col items-center justify-center font-philosopher`}
+      } h-screen text-center flex flex-col items-center justify-center`}
     >
       <h1 className={pageTitle}>Self Development</h1>
       <div className="w-auto overflow-x-clip max-h-[30%] flex my-10 lg:my-0 lg:mb-20 lg:mt-14">

@@ -11,9 +11,9 @@ function Footer() {
         darkMode ? "bg-[#091023]" : "bg-white"
       }`}
     >
-      <div className="flex justify-evenly items-center w-full h-full md:py-12 md:max-w-[90vw]">
+      <div className="flex justify-evenly items-center w-full h-full md:py-12 md:max-w-[85vw]">
         <div className="hidden w-1/2 md:flex flex-col gap-y-10">
-          <h1 className="text-[clamp(44px,3vw,55px)]">
+          <h1 className="text-[clamp(44px,3vw,55px)] font-bold">
             Want me to join your team? Feel free to contact!
           </h1>
           <img

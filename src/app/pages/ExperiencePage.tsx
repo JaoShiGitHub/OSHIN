@@ -9,7 +9,7 @@ function ExperiencePage() {
       id="experience"
       className={`${
         darkMode ? "bg-[#091023]" : "bg-white"
-      } h-screen text-center flex flex-col items-center justify-center font-philosopher`}
+      } h-screen text-center flex flex-col items-center justify-center `}
     >
       <h1 className={pageTitle}>Experience</h1>
       <div className="w-auto overflow-x-clip max-h-[30%] flex my-10 lg:my-0 lg:mb-20 lg:mt-14">
@@ -35,11 +35,14 @@ function ExperiencePage() {
         </div>
       </div>
       <p className="max-w-[1050px] px-5 text-[clamp(1rem,1.5vw,1.25rem)]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit,
+        In 2025, Oshin joined a tech company as a frontend trainee for three
+        months, working on Elixir and Phoenix LiveView alongside senior
+        developers and the CTO. She also helped with organising and designing
+        trainee lessons, and contributed to other initiatives within the
+        company. During this time, Oshin not only improved her developer skills
+        but also strengthened the essential soft skills every developer needs,
+        such as critical thinking, communication, problem solving, emotional
+        intelligence, and collaboration.
       </p>
     </section>
   );

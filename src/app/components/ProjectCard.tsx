@@ -11,9 +11,9 @@ function ProjectCard(props: Project) {
 
   return (
     <section className="flex flex-col md:flex-row items-center w-full max-w-[75vw] lg:max-w-[70vw]  md:max-h-[60vh] lg:max-h-[80vh] xl:mt-0  md:pb-0  lg:mt-0 ">
-      <h1 className={pageTitle + ` md:hidden mb-10`}>PROJECTS</h1>
+      <h1 className={pageTitle + ` md:hidden mb-10`}>Projects</h1>
       <div className="md:hidden w-full flex flex-col items-center">
-        <span>-{type.toUpperCase()}- </span>
+        <span>- {type.toUpperCase()} -</span>
         <img
           className={`${imgCommonCSS} mt-10 mb-10`}
           src={images[0]}
@@ -48,7 +48,9 @@ function ProjectCard(props: Project) {
         )}
       </div>
       <div className="md:w-1/2 text-center md:pl-10">
-        <h1 className="text-[clamp(20px,4vw,36px)] font-bold">{title}</h1>
+        <h1 className="text-[clamp(20px,4vw,36px)] font-philosopher font-bold">
+          {title}
+        </h1>
         <span className="hidden md:inline">-{type.toUpperCase()}- </span>
         <p className="hidden lg:block text-center text-[clamp(1rem,1.5vw,1.25rem)] md:mt-10  xl:px-10">
           {description}
