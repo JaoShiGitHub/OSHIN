@@ -18,10 +18,10 @@ function Home() {
       <Navbar />
       <HomePage />
       <AboutPage />
-      <SelfDevPage />
+      <ExperiencePage />
       <ProjectPage />
       <TechStackPage />
-      <ExperiencePage />
+      <SelfDevPage />
       <Footer />
     </main>
   );

@@ -35,11 +35,13 @@ function SelfDevPage() {
         </div>
       </div>
       <p className="max-w-[1050px] px-5 text-[clamp(1rem,1.5vw,1.25rem)]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit,
+        Oshin surrounds herself daily with international developers in Bangkok,
+        which helps her grow as a web developer and improve her English skills.
+        Instead of waiting for opportunities, she creates them for herself and
+        for others who share her interests, enhancing both her soft and
+        technical skills—such as organising events for the <b>DevMorning</b>
+        community in 2024 and 2025, and hosting a developer meetup at True
+        Digital Park in 2025.
       </p>
     </section>
   );

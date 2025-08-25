@@ -6,10 +6,10 @@ type NavItem = {
 const navItems: NavItem[] = [
   { section: "Home", link: "#home" },
   { section: "About", link: "#about" },
-  { section: "Self Development", link: "#self-development" },
+  { section: "Experience", link: "#experience" },
   { section: "Projects", link: "#projects" },
   { section: "Tech Stack", link: "#tech-stack" },
-  { section: "Experience", link: "#experience" },
+  { section: "Self Development", link: "#self-development" },
   { section: "Contact", link: "#contact" },
 ];
 
