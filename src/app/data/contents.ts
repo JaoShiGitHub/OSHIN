@@ -8,11 +8,7 @@ const oshinContents: Content[] = [
   {
     page: "Home",
     title: "Oshin",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit,`,
+    description: `With passion to grow as a web developer, the journey is not only about building web applications, but also about becoming better than who we were yesterday, while helping others develop and grow together.`,
   },
   {
     page: "About",

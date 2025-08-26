@@ -17,14 +17,14 @@ function HomePage() {
     >
       <FadeInWrapper>
         <h1
-          className={`font-babylonica leading-[20vh] text-[16vw] leading-2 ${
+          className={`font-babylonica  text-[30vw] md:text-[20vw] leading-[10vh] lg:leading-[20vw] mb-10 lg:mb-0 ${
             darkMode ? "text-[#dbdbdb]" : "text-[#381717]"
           }`}
         >
           {title}
         </h1>
         <p
-          className={`px-20 text-[1.67vw] font-philosopher leading-8 mt-10 min-w-[300px] max-w-[1450px] leading-0.5 ${
+          className={`px-10 md:px-0 min-w-[200px] text-[clamp(1rem,1.5vw,2.25rem)] font-philosopher md:max-w-[70vw] md:leading-8  ${
             darkMode ? "text-[#dadada]" : "text-black"
           }`}
         >
