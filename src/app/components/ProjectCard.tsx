@@ -52,14 +52,13 @@ function ProjectCard(props: Project) {
           {title}
         </h1>
         <span className="hidden md:inline">-{type.toUpperCase()}- </span>
+        {/* Todo: Use long description for desktop */}
         <p className="hidden lg:block text-center text-[clamp(1rem,1.5vw,1.25rem)] md:mt-10  xl:px-10">
           {description}
         </p>
+        {/* Todo: Use short description for mobile */}
         <p className="lg:hidden text-center text-[clamp(1rem,1.5vw,1.25rem)] md:mt-10 md:mb-16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          {description}
         </p>
         <p className="text-[clamp(1rem,1.5vw,1.13rem)] mt-10 mb-6 md:mt-14 xl:mt-10 md:mb-10">
           Tech Stack: {techStack}

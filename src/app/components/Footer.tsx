@@ -7,14 +7,14 @@ function Footer() {
   return (
     <section
       id="contact"
-      className={`max-h-[680px] h-full md:max-h-[457px] flex flex-col items-center ${
+      className={`max-h-[680px] h-full md:max-h-[457px]  flex flex-col items-center ${
         darkMode ? "bg-[#091023]" : "bg-white"
       }`}
     >
-      <div className="flex justify-evenly items-center w-full h-full md:py-12 md:max-w-[85vw]">
+      <div className="flex justify-evenly items-center w-full h-full md:py-12 max-w-[90vw] xl:px-10">
         <div className="hidden w-1/2 md:flex flex-col gap-y-10">
-          <h1 className="text-[clamp(44px,3vw,55px)] font-bold">
-            Want me to join your team? Feel free to contact!
+          <h1 className="text-[clamp(44px,3vw,55px)] font-bold xl:pr-10">
+            Want Oshin on your team? Feel free to contact!
           </h1>
           <img
             className="w-[5vw] mx-auto"
@@ -27,7 +27,7 @@ function Footer() {
           />
         </div>
 
-        <div className="flex flex-col items-center justify-between md:justify-center px-4 pb-10  md:pl-10 md:pb-0 h-full w-full md:w-1/2 md:gap-y-10">
+        <div className="flex flex-col items-center justify-between md:justify-center pb-10  md:pl-10 md:pb-0 h-full w-full md:w-1/2 md:gap-y-10">
           {/* DOWNLOAD RESUME */}
           <a
             href="/files/oshin_ganjanapas_resume.pdf"
@@ -42,8 +42,8 @@ function Footer() {
               Download <br className="md:hidden" /> Oshin&apos;s resume
             </b>
           </a>
-          <h1 className="block md:hidden text-[clamp(40px,3vw,45px)] my-10">
-            Want me to join your team? Feel free to contact!
+          <h1 className="block md:hidden text-[clamp(40px,3vw,45px)] pr-10 font-bold my-10">
+            Want Oshin on your team? Feel free to contact!
           </h1>
           {/* CONTACTS */}
           <ul className="text-[clamp(20px,5vw,24px)] md:text-[clamp(20px,2vw,24px)] w-full flex flex-col gap-y-4">

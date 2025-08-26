@@ -30,7 +30,7 @@ function ProjectPage() {
         darkMode ? "bg-[#091023]" : "bg-white"
       }`}
     >
-      <h1 className={pageTitle + ` hidden md:inline mb:10`}>Projects</h1>
+      <h1 className={pageTitle + ` hidden md:inline md:mb-10`}>Projects</h1>
       <section className="flex justify-between max-w-[90vw] items-center w-full">
         <button
           onClick={handleLeftClick}
