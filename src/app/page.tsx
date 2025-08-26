@@ -9,12 +9,14 @@ import ProjectPage from "./pages/ProjectPage";
 import TechStackPage from "./pages/TechStackPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import Footer from "./components/Footer";
+import Menu from "./components/Munu";
 
 function Home() {
-  const { darkMode } = useNavbar();
+  const { darkMode, menu } = useNavbar();
 
   return (
     <main className={darkMode ? "text-white" : "text-black"}>
+      {menu && <Menu isVisible={menu} />}
       <Navbar />
       <HomePage />
       <AboutPage />

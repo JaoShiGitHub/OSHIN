@@ -2,12 +2,16 @@
 import React, { createContext, useState, ReactNode } from "react";
 
 interface NavbarContextType {
+  menu: boolean;
   darkMode: boolean;
+  setMenu: () => void;
   setDarkMode: () => void;
 }
 
 const defaultNavbarContext: NavbarContextType = {
+  menu: false,
   darkMode: false,
+  setMenu: () => {},
   setDarkMode: () => {},
 };
 
@@ -19,13 +23,25 @@ interface NavbarProviderProps {
 
 function NavbarProvider({ children }: NavbarProviderProps) {
   const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [menu, setMenu] = useState<boolean>(false);
 
   const toggleDarkMode = (): void => {
     setDarkMode(!darkMode);
   };
 
+  const toggleMenu = (): void => {
+    setMenu(!menu);
+  };
+
   return (
-    <NavbarContext.Provider value={{ darkMode, setDarkMode: toggleDarkMode }}>
+    <NavbarContext.Provider
+      value={{
+        darkMode,
+        setDarkMode: toggleDarkMode,
+        menu,
+        setMenu: toggleMenu,
+      }}
+    >
       {children}
     </NavbarContext.Provider>
   );

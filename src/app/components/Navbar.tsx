@@ -4,14 +4,18 @@ import { useNavbar } from "../contexts/NavbarProvider";
 import navItems from "../data/sections";
 
 function Navbar() {
-  const { darkMode, setDarkMode } = useNavbar();
+  const { darkMode, setDarkMode, setMenu } = useNavbar();
 
   const toggleDarkMode = (): void => {
     setDarkMode();
   };
 
+  const toggleMenu = (): void => {
+    setMenu();
+  };
+
   return (
-    <nav className="fixed flex justify-center items-center w-full top-0 z-50">
+    <nav className="fixed flex justify-center items-center w-full top-0 z-40">
       {/* Navbar for the screen that wider than 767px */}
       <div className="hidden md:flex justify-between items-center w-full top-0 max-w-[90vw]">
         <div className="font-babylonica text-[4.45vw]">Oshin</div>
@@ -50,7 +54,7 @@ function Navbar() {
         }`}
       >
         <div className="flex justify-center items-center gap-x-8">
-          <button className="cursor-pointer">
+          <button className="cursor-pointer" onClick={toggleMenu}>
             <img
               className="h-[6vw]"
               alt="Menu icon"

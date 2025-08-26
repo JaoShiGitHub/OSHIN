@@ -89,3 +89,7 @@
 .whitespace-nowrap {
   white-space: nowrap;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
