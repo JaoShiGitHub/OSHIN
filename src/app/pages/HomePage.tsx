@@ -12,20 +12,20 @@ function HomePage() {
     <section
       id="home"
       className={`flex flex-col items-center justify-center h-screen text-center ${
-        darkMode ? "bg-[#070d1d]" : "bg-white"
+        darkMode ? "bg-[#01001a]" : "bg-white"
       }`}
     >
       <FadeInWrapper>
         <h1
           className={`font-babylonica  text-[30vw] md:text-[20vw] leading-[10vh] lg:leading-[20vw] mb-10 lg:mb-0 ${
-            darkMode ? "text-[#dbdbdb]" : "text-[#381717]"
+            darkMode ? "text-slate-300" : "text-[#381717]"
           }`}
         >
           {title}
         </h1>
         <p
-          className={`px-10 md:px-0 min-w-[200px] text-[clamp(1rem,1.5vw,2.25rem)] font-philosopher md:max-w-[70vw] md:leading-8  ${
-            darkMode ? "text-[#dadada]" : "text-black"
+          className={`px-10 md:px-0 min-w-[200px] text-[clamp(1rem,1.5vw,2.25rem)] font-philosopher md:max-w-[70vw] md:leading-8 
+        
           }`}
         >
           {description}

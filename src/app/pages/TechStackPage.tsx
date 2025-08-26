@@ -9,7 +9,7 @@ function TechStackPage() {
     <div
       id="tech-stack"
       className={`h-screen ${
-        darkMode ? "bg-[#070d1d]" : "bg-white"
+        darkMode ? "bg-[#01001a]" : "bg-white"
       } font-philosopher flex flex-col items-center justify-center text-center px-6`}
     >
       <FadeInWrapper>

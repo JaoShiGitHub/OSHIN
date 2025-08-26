@@ -8,7 +8,7 @@ function Footer() {
     <section
       id="contact"
       className={`max-h-[680px] h-full md:max-h-[457px]  flex flex-col items-center ${
-        darkMode ? "bg-[#091023]" : "bg-white"
+        darkMode ? "bg-[#040016]" : "bg-white"
       }`}
     >
       <div className="flex justify-evenly items-center w-full h-full md:py-12 max-w-[90vw] xl:px-10">
@@ -34,7 +34,7 @@ function Footer() {
             download
             className={`${
               darkMode
-                ? "border-white hover:border-[#FFD980] text-white hover:text-[#FFD980]"
+                ? "border-slate-300 hover:border-[#FFD980] hover:text-[#FFD980]"
                 : "border-black hover:border-blue-600 text-black hover:text-blue-600"
             } border w-full rounded-[10px] min-h-[83px] flex items-center justify-center text-center mt-18 md:mt-0`}
           >
@@ -96,7 +96,7 @@ function Footer() {
 
       <p
         className={`text-center w-full ${
-          darkMode ? "bg-[#070d1d]" : "bg-[#F2F2F2]"
+          darkMode ? "bg-[#01001a]" : "bg-[#F2F2F2]"
         } py-2`}
       >
         © Oshin Ganjanapas. All Rights Reserved

@@ -1,14 +1,14 @@
 import { useNavbar } from "../contexts/NavbarProvider";
 import experience from "../data/experience";
 import { pageTitle } from "../styles/text";
-
+// #070d1d #000a1b
 function ExperiencePage() {
   const { darkMode } = useNavbar();
   return (
     <section
       id="experience"
       className={`${
-        darkMode ? "bg-[#091023]" : "bg-white"
+        darkMode ? "bg-[#01001a]" : "bg-white"
       } h-screen text-center flex flex-col items-center justify-center `}
     >
       <h1 className={pageTitle}>Experience</h1>

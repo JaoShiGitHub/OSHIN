@@ -8,7 +8,7 @@ function SelfDevPage() {
     <section
       id="self-development"
       className={`${
-        darkMode ? "bg-[#070d1d]" : "bg-[#F3F3F3F3]"
+        darkMode ? "bg-[#01001a]" : "bg-[#F3F3F3F3]"
       } h-screen text-center flex flex-col items-center justify-center`}
     >
       <h1 className={pageTitle}>Self Development</h1>

@@ -15,7 +15,7 @@ function Home() {
   const { darkMode, menu } = useNavbar();
 
   return (
-    <main className={darkMode ? "text-white" : "text-black"}>
+    <main className={darkMode ? "text-slate-300" : "text-black"}>
       {menu && <Menu isVisible={menu} />}
       <Navbar />
       <HomePage />
@@ -30,3 +30,5 @@ function Home() {
 }
 
 export default Home;
+
+// Bg colours #070d1d  #000a1b  #040016 #01001a

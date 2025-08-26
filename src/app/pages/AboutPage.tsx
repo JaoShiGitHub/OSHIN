@@ -13,16 +13,20 @@ function AboutPage() {
     <section id="about" className="h-screen text-center ">
       <div
         className={`h-screen hidden md:flex md:flex-row ${
-          darkMode ? "bg-[#091023]" : "bg-[#F2F2F2]"
+          darkMode ? "bg-[#040016]" : "bg-[#F2F2F2]"
         }`}
       >
         <img
           className="w-full md:w-1/2 h-full object-cover object-center"
           alt="Oshin's image"
-          src="/images/oshin/oshin.png"
+          src={
+            darkMode
+              ? "/images/oshin/oshin_dark_mode2.png"
+              : "/images/oshin/oshin.png"
+          }
         />
 
-        <div className="w-full md:w-1/2 h-auto flex flex-col items-center justify-center gap-y-12 p-4">
+        <div className="w-full md:w-1/2 h-auto flex flex-col items-center justify-center gap-y-12 p-4 ">
           <FadeInWrapper>
             <h1 className="font-philosopher font-bold text-[3vw] mb-4">
               OSHIN
@@ -35,7 +39,13 @@ function AboutPage() {
           </FadeInWrapper>
         </div>
       </div>
-      <div className="w-full h-full bg-[url('/images/oshin/oshin.png')] bg-cover bg-center text-white md:hidden">
+      <div
+        className={`${
+          darkMode
+            ? "bg-[url('/images/oshin/oshin_dark_mode2.png')]"
+            : "bg-[url('/images/oshin/oshin.png')]"
+        } bg-cover bg-center w-full h-full text-white md:hidden`}
+      >
         <div className="h-full flex flex-col items-center justify-center px-4">
           <FadeInWrapper>
             <h1 className="font-philosopher font-bold text-[clamp(3rem,10vw,20rem)] tracking-tighter mb-4">
