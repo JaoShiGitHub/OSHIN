@@ -27,7 +27,7 @@ function ProjectPage() {
     <section
       id="projects"
       className={`h-screen flex flex-col justify-center items-center gap-y-10 xl:gap-y-20  ${
-        darkMode ? "bg-[#091023]" : "bg-white"
+        darkMode ? "bg-[#091023]" : "bg-[#F3F3F3F3]"
       }`}
     >
       <h1 className={pageTitle + ` hidden md:inline md:mb-10`}>Projects</h1>
