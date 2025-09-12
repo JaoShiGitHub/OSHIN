@@ -46,6 +46,7 @@
   height: 100%;
   animation-play-state: running;
   animation: marquee-scroll 60s linear infinite;
+  background: none;
 }
 
 .marquee2 {

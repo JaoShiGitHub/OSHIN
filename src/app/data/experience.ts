@@ -10,7 +10,7 @@ const experience: experienceImage[] = [
     {src: "/images/experience/oshin-genserver.png", alt: "Oshin's exploring GenServer at BiggestLab"},
     {src: "/images/experience/oshin-alex-wine-birthday.png", alt: "Oshin, Wine, and Alex at Wine’s birthday at BiggestLab"},
     // {src: "/images/experience/oshin-first-elixir-project.png", alt: "Oshin's first Elixir project"},
-    {src: "/images/experience/oshin-lisa-birthday.png", alt: "Oshin at Lisa's birthday"},
+    // {src: "/images/experience/oshin-lisa-birthday.png", alt: "Oshin at Lisa's birthday"},
 ];
 
 export default experience;
