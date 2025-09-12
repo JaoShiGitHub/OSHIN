@@ -9,27 +9,17 @@ function SelfDevPage() {
       id="self-development"
       className={`${
         darkMode ? "bg-[#01001a]" : "bg-[#F3F3F3F3]"
-      } h-screen text-center flex flex-col items-center justify-center`}
+      } h-screen text-center flex flex-col items-center justify-center px-20`}
     >
       <h1 className={pageTitle}>Self Development</h1>
-      <div className="w-auto overflow-x-clip max-h-[30%] flex my-10 lg:my-0 lg:mb-20 lg:mt-14">
-        <div className="marquee whitespace-nowrap">
+      <div className="w-auto rounded-3xl overflow-scroll max-h-[30%] flex my-10 lg:my-0 lg:mb-20 lg:mt-14">
+        <div className="flex">
           {selfDevelopment.map((image, index) => (
             <img
               key={index}
               src={image.src}
               alt={image.alt}
-              className=" mx-3 lg:mx-4"
-            />
-          ))}
-        </div>
-        <div className="marquee2 whitespace-nowrap">
-          {selfDevelopment.map((image, index) => (
-            <img
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              className=" mx-3 lg:mx-10"
+              className="mx-3 lg:mx-4"
             />
           ))}
         </div>

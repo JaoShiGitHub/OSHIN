@@ -9,7 +9,7 @@ function ExperiencePage() {
       id="experience"
       className={`${
         darkMode ? "bg-[#01001a]" : "bg-white"
-      } h-screen text-center flex flex-col items-center justify-center px-40`}
+      } h-screen text-center flex flex-col items-center justify-center px-20`}
     >
       <h1 className={pageTitle}>Experience</h1>
       <div className="w-auto overflow-scroll rounded-3xl max-h-[30%] flex my-10 lg:my-0 lg:mb-20 lg:mt-14">
