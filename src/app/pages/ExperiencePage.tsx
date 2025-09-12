@@ -13,14 +13,9 @@ function ExperiencePage() {
     >
       <h1 className={pageTitle}>Experience</h1>
       <div className="w-auto overflow-scroll rounded-3xl max-h-[30%] flex my-10 lg:my-0 lg:mb-20 lg:mt-14">
-        <div className="flex ">
+        <div className="flex gap-x-4 lg:gap-x-10">
           {experience.map((image, index) => (
-            <img
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              className=" mx-3 lg:mx-4"
-            />
+            <img key={index} src={image.src} alt={image.alt} className="" />
           ))}
         </div>
       </div>
