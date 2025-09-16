@@ -1,7 +1,7 @@
 import { useNavbar } from "../contexts/NavbarProvider";
 import experience from "../data/experience";
 import { pageTitle } from "../styles/text";
-// #070d1d #000a1b
+
 function ExperiencePage() {
   const { darkMode } = useNavbar();
   return (
@@ -9,28 +9,13 @@ function ExperiencePage() {
       id="experience"
       className={`${
         darkMode ? "bg-[#01001a]" : "bg-white"
-      } h-screen text-center flex flex-col items-center justify-center `}
+      } h-screen text-center flex flex-col items-center justify-center px-20`}
     >
       <h1 className={pageTitle}>Experience</h1>
-      <div className="w-auto overflow-x-clip max-h-[30%] flex my-10 lg:my-0 lg:mb-20 lg:mt-14">
-        <div className="marquee whitespace-nowrap">
+      <div className="w-auto overflow-scroll rounded-3xl max-h-[30%] flex my-10 lg:my-0 lg:mb-20 lg:mt-14">
+        <div className="flex gap-x-4 lg:gap-x-10">
           {experience.map((image, index) => (
-            <img
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              className=" mx-3 lg:mx-4"
-            />
-          ))}
-        </div>
-        <div className="marquee2 whitespace-nowrap" aria-hidden="true">
-          {experience.map((image, index) => (
-            <img
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              className=" mx-3 lg:mx-4"
-            />
+            <img key={index} src={image.src} alt={image.alt} className="" />
           ))}
         </div>
       </div>
