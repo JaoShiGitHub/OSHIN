@@ -1,11 +1,14 @@
+import { useState } from "react";
 import techStackByType from "../data/techStackByType";
 
 function TechStackSlideshow() {
+  const [currentType, setCurrentType] = useState(0);
+
   return (
     <section className="sm:hidden flex flex-col items-center gap-y-10">
-      <span>{techStackByType[0].type}</span>
+      <span>{techStackByType[currentType].type}</span>
       <div className="max-w-[80%] flex flex-wrap justify-center items-center gap-6 ">
-        {techStackByType[0].techStack.map((image, index) => {
+        {techStackByType[currentType].techStack.map((image, index) => {
           return (
             <div key={index} className="flex justify-center content-center">
               <img alt={image.alt} src={image.src} className=" max-h-[50px]" />
@@ -13,6 +16,7 @@ function TechStackSlideshow() {
           );
         })}
       </div>
+      <div>{/* TODO: Add button */}</div>
     </section>
   );
 }
